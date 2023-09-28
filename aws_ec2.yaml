@@ -1,0 +1,10 @@
+plugin: aws_ec2
+aws_profile: default
+hostnames:
+    - ip-address
+regions:
+    - ap-south-1
+groups:
+    redhat: "'Redhat' in tags.OS"
+    ubuntu: "'Ubuntu' in tags.OS"
+    amazon: "'amazon' in tags.OS"
